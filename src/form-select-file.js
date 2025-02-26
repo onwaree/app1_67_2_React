@@ -13,7 +13,7 @@ export default function FormSelectFile(){
         let maxNumfiles = selectMaxNumFiles.current.value
         let maxSize = selectMaxSize.current.value
 
-        if(inputFile.current.files.length > 1){
+        if(inputFile.current.files.length > maxNumfiles){
             alert(`เลือกได้ไม่เกิน ${maxNumfiles} ไฟล์`)
             return
         }
